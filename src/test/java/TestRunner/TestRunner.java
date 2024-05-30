@@ -6,6 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "features"
-        , glue = "stepdefinitions")
+        , glue = "stepdefinitions"
+//,tags = "@submitForm2"
+    //    , dryRun = true
+,plugin = {"pretty","html:target/report.html"}
+)
 public class TestRunner {
 }
